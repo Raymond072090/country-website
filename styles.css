@@ -90,6 +90,57 @@ h1, .fancy-heading {
     margin-bottom: 30px;
 }
 
+.fancy-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.food-item figcaption h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.food-item figcaption p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 10px;
+}
+
+/* Responsive navigation */
+.main-nav {
+    text-align: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.nav-menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    padding: 10px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    font-size: 0.9rem;
+}
+
 /* General Styling for the Main Sections */
 main {
     max-width: 80%; /* Set a maximum width for the content */
@@ -195,12 +246,12 @@ footer {
     width: 100%;
 }
 
-/* Food Gallery */
+/* Responsive grid for the food gallery */
 .food-gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-bottom: 20px;
+    grid-template-columns: 1fr; /* One column by default for mobile */
+    gap: 20px;
+    padding: 20px;
 }
 
 .food-item {
@@ -220,6 +271,12 @@ footer {
     margin-bottom: 15px;
 }
 
+/* Ensure images and figcaptions scale well */
+.food-item img {
+    width: 100%;
+    height: auto;
+}
+
 .food-item:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -234,6 +291,20 @@ footer {
     font-size: 1.2rem;
     color: #444;
 }
+
+/* For larger screens (tablets and desktops), use more columns */
+@media (min-width: 600px) {
+    .food-gallery {
+        grid-template-columns: 1fr 1fr; /* Two columns for medium screens */
+    }
+}
+
+@media (min-width: 900px) {
+    .food-gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Four columns for larger screens */
+    }
+}
+
 
 /* Footer */
 footer {
@@ -446,4 +517,10 @@ footer p {
     color: #2c3e50; /* Optional: Change the color */
     text-align: center; /* Center-align the title */
     margin-top: 20px; /* Optional: Adjust margin */
+}
+
+/* Basic styles for the header image */
+.header-image {
+    width: 100%;
+    height: auto;
 }
