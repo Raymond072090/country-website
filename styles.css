@@ -117,7 +117,7 @@ h1, .fancy-heading {
 }
 
 .fancy-heading {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 20px 0;
 }
 
@@ -125,8 +125,8 @@ h1, .fancy-heading {
 .food-gallery {
     display: grid;
     grid-template-columns: 1fr; /* One column on mobile by default */
-    gap: 30px;
-    padding: 20px;
+    gap: 20px;
+    padding: 30px;
 }
 
 @media (min-width: 600px) {
@@ -144,9 +144,9 @@ h1, .fancy-heading {
 /* Food Item Box Styling */
 .food-item {
     text-align: center;
-    padding: 20px; /* Increase padding for bigger boxes */
+    padding: 30px; /* Increase padding for bigger boxes */
     border: 2px solid #ccc;
-    border-radius: 10px; /* Slightly larger border-radius for rounded corners */
+    border-radius: 20px; /* Slightly larger border-radius for rounded corners */
     background-color: #f9f9f9;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -165,12 +165,12 @@ h1, .fancy-heading {
 }
 
 .food-item h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .food-item p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #444;
 }
 
@@ -316,7 +316,7 @@ table caption {
 
 /* History Images */
 .history-image {
-    width: 100%;
+    width: 70%;
     height: auto;
     margin: 20px 0;
     border-radius: 10px;
@@ -337,8 +337,15 @@ table caption {
 .history-box h2 {
     color: #2c3e50;
     font-family: 'Lucida Sans', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: 20px;
+}
+
+/* Make the paragraph text bigger inside the history-box */
+.history-box p {
+    font-size: 1.3rem; /* Increased font size for paragraph text */
+    line-height: 1.8; /* Added line height for better readability */
+    margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
