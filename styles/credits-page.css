@@ -1,0 +1,32 @@
+/* Credits Page (Credits List, Decorative Images) */
+
+/* Decorative Image Styling */
+.decorative-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Credits List */
+.credits-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.credits-list li {
+    margin-bottom: 10px;
+}
+
+.credits-list li a {
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.credits-list li a:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.05);
+}

@@ -1,0 +1,51 @@
+/* History Page (History Box, History Title, History Images) */
+
+/* History Title */
+.pacifico-regular {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* History Images */
+.history-image {
+    width: 70%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* History Box */
+.history-box {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 80%;
+}
+
+.history-box h2 {
+    color: #2c3e50;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+/* Make the paragraph text bigger inside the history-box */
+.history-box p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .history-box {
+        max-width: 95%;
+        padding: 15px;
+    }
+}

@@ -1,0 +1,33 @@
+/* Shared (Content Box, Flex Center, Center Text) */
+
+/* Content Box */
+.content-box {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 70%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Flex Center */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 150px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+/* Center Text Container */
+.center-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    text-align: center;
+}
