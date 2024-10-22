@@ -1,12 +1,21 @@
 /* Credits Page (Credits List, Decorative Images) */
 
+/* Parent Container to Restrict Width */
+.main-content-container {
+    max-width: 800px; /* Restrict the parent container's width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+}
+
 /* Decorative Image Styling */
 .decorative-image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100% !important; /* Allow image to take full width of the container */
+    max-width: 300px !important; /* Force maximum width to 300px */
+    height: auto !important; /* Maintain aspect ratio */
+    margin: 0 auto 20px !important; /* Center the image and add bottom margin */
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    display: block !important; /* Ensure block-level behavior */
 }
 
 /* Credits List */
@@ -14,19 +23,41 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    list-style-type: none;
 }
 
 .credits-list li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .credits-list li a {
     font-size: 1rem;
-    padding: 8px 15px;
+    padding: 10px 20px;
     border-radius: 4px;
+    color: #007BFF;
+    text-decoration: none;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .credits-list li a:hover {
     background-color: #f4f4f4;
     transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Spacing */
+.content-box {
+    margin-bottom: 40px;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 40px;
+    background-color: #373737;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
