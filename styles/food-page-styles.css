@@ -1,6 +1,6 @@
 /* Food Page (Food Gallery, Food Item Box Styling) */
 
-/* Food Gallery */
+/* Ensure that the rest of the content follows the usual layout */
 .food-gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -51,13 +51,16 @@
 .food-item p {
     font-size: 1.5rem;
     color: #444;
+    line-height: 1.6; /* Add line-height for better readability */
 }
 
+/* Header Styling */
 header {
     position: relative;
     width: 100%; /* Make sure the header takes the full width of the page */
     height: 600px; /* Set a fixed height for the header (adjust as needed) */
     overflow: hidden; /* Hide any overflow of the image */
+    margin-bottom: 30px; /* Add margin to create space below the header */
 }
 
 .header-image {
@@ -65,4 +68,38 @@ header {
     height: 100%; /* Make the image fill the height of the header */
     object-fit: cover; /* Ensure the image covers the header area without stretching */
     display: block; /* Ensure the image behaves as a block element */
+}
+
+/* Responsive Improvements for Header */
+@media (max-width: 600px) {
+    header {
+        height: 400px; /* Reduce the header height on small screens */
+    }
+}
+
+/* Additional media queries to adjust padding and layout for smaller screens */
+@media (max-width: 400px) {
+    .food-item {
+        padding: 20px;
+    }
+
+    .food-item h4 {
+        font-size: 1.8rem; /* Slightly smaller heading for mobile */
+    }
+
+    .food-item p {
+        font-size: 1.4rem; /* Slightly smaller paragraph text for mobile */
+    }
+}
+
+/* Center the heading above the food gallery */
+.centered-text-section {
+    text-align: center; /* Center the text horizontally */
+    margin-bottom: 40px; /* Add some spacing between the heading and the gallery */
+}
+
+/* Optional: Adjust heading size */
+.fancy-heading {
+    font-size: 3rem;
+    margin: 0; /* Remove default margin to control spacing */
 }
