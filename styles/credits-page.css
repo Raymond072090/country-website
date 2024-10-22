@@ -56,7 +56,7 @@
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
-    height: 100vh; /* Make the section take up the full viewport height */
+    height: 10vh; /* Make the section take up the full viewport height */
     text-align: center; /* Ensure the text is centered */
 }
 
