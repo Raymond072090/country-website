@@ -2,20 +2,23 @@
 
 /* Parent Container to Restrict Width */
 .main-content-container {
-    max-width: 800px; /* Restrict the parent container's width */
+    max-width: 100%; /* Allow the container to take up the full width of the viewport */
     margin: 0 auto; /* Center the container */
-    padding: 20px; /* Add some padding */
+    padding: 0; /* Remove padding to avoid unnecessary gaps */
+    position: relative; /* Keep the container relative for control over positioning */
+    z-index: 1; /* Ensure it appears above other elements */
 }
 
 /* Decorative Image Styling */
 .decorative-image {
-    width: 100% !important; /* Allow image to take full width of the container */
-    max-width: 300px !important; /* Force maximum width to 300px */
-    height: auto !important; /* Maintain aspect ratio */
-    margin: 0 auto 20px !important; /* Center the image and add bottom margin */
-    border-radius: 8px !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
-    display: block !important; /* Ensure block-level behavior */
+    width: 100vw; /* Make the image take up the full width of the viewport */
+    height: 600px; /* Keep the height fixed */
+    object-fit: cover; /* Stretch the image horizontally while keeping the height */
+    margin: 0 auto; /* Center the image */
+    position: relative; /* Keep the image relative to the container */
+    z-index: 2; /* Ensure the image appears above other content */
+    border-radius: 8px; /* Keep the rounded corners if desired */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Keep the shadow effect */
 }
 
 /* Credits List */
@@ -46,6 +49,20 @@
     background-color: #f4f4f4;
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Centering Credits Section */
+.credits-section {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Make the section take up the full viewport height */
+    text-align: center; /* Ensure the text is centered */
+}
+
+.credits-section h1 {
+    font-size: 2rem; /* Adjust the size of the Credits text */
+    font-family: 'Montserrat', sans-serif; /* Use a nice font for the heading */
 }
 
 /* Section Spacing */
