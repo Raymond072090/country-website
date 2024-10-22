@@ -52,3 +52,17 @@
     font-size: 1.5rem;
     color: #444;
 }
+
+header {
+    position: relative;
+    width: 100%; /* Make sure the header takes the full width of the page */
+    height: 600px; /* Set a fixed height for the header (adjust as needed) */
+    overflow: hidden; /* Hide any overflow of the image */
+}
+
+.header-image {
+    width: 100%; /* Make the image fill the entire width of the header */
+    height: 100%; /* Make the image fill the height of the header */
+    object-fit: cover; /* Ensure the image covers the header area without stretching */
+    display: block; /* Ensure the image behaves as a block element */
+}
