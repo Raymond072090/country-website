@@ -98,8 +98,9 @@ header {
     margin-bottom: 40px; /* Add some spacing between the heading and the gallery */
 }
 
-/* Optional: Adjust heading size */
+/* Apply Pacifico to the fancy heading */
 .fancy-heading {
-    font-size: 3rem;
-    margin: 0; /* Remove default margin to control spacing */
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem; /* Adjust as needed */
+    margin: 0; /* Remove default margin */
 }
