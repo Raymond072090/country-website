@@ -21,34 +21,68 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Keep the shadow effect */
 }
 
-/* Credits List */
+/* Credits List - Adjusted Grid Layout */
 .credits-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns in the grid */
+    gap: 40px; /* Space between the buttons */
+    padding: 30px;
+    justify-content: center;
     list-style-type: none;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .credits-list li {
-    margin-bottom: 15px;
+    margin: 0;
 }
 
+/* Ensures a more compact layout */
 .credits-list li a {
-    font-size: 1rem;
-    padding: 10px 20px;
-    border-radius: 4px;
+    font-size: 1.1rem;
+    padding: 15px 25px; /* Padding for better spacing */
+    border-radius: 10px;
     color: #007BFF;
     text-decoration: none;
     background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 250px;
 }
 
 .credits-list li a:hover {
     background-color: #f4f4f4;
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* To ensure "Stairs" goes under "Paella" */
+.credits-list li:nth-child(5) {
+    grid-column-start: 2; /* Places "Stairs" directly under "Paella" */
+}
+
+/* Adjust gap between section titles and boxes */
+.content-box h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* Media Queries for Responsive Layout */
+@media (max-width: 768px) {
+    .credits-list {
+        grid-template-columns: repeat(2, 1fr); /* Limit to 2 columns for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .credits-list {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
 }
 
 /* Centering Credits Section */
@@ -77,4 +111,71 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+/* Section for the Videos */
+.content-box.videos-section {
+    display: flex;
+    flex-direction: column; /* Stack the heading and the button vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 30px;
+}
+
+.credits-list.videos-list {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.credits-list.videos-list li {
+    margin: 0;
+}
+
+.credits-list.videos-list li a {
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 250px; /* Ensure the button isn't too wide */
+}
+
+.credits-list.videos-list li a:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styling */
+.videos-section h2 {
+    margin-bottom: 20px; /* Space between the heading and the button */
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.flag-button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make the container take full height of the viewport */
+}
+
+.flag-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.flag-button img {
+    width: 50px; /* Adjust the size of the flag */
+    height: auto;
 }
