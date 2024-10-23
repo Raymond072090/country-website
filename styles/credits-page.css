@@ -116,22 +116,25 @@ footer {
 /* Section for the Videos */
 .content-box.videos-section {
     display: flex;
-    flex-direction: column; /* Stack the heading and the button vertically */
+    flex-direction: column; /* Stack the heading and the link vertically */
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
     padding: 30px;
 }
 
+/* Updated styles to center the video link */
 .credits-list.videos-list {
     display: flex;
-    justify-content: center; /* Center the button horizontally */
-    list-style-type: none;
+    justify-content: center; /* Center the link horizontally */
+    align-items: center; /* Center the link vertically */
+    list-style-type: none; /* Remove bullet points */
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    width: 100%; /* Full width for alignment */
 }
 
 .credits-list.videos-list li {
-    margin: 0;
+    margin: 0 auto; /* Center the list item */
 }
 
 .credits-list.videos-list li a {
@@ -143,10 +146,10 @@ footer {
     background-color: #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
+    text-align: center; /* Center the text inside the link */
     display: block;
-    width: 100%;
-    max-width: 250px; /* Ensure the button isn't too wide */
+    width: auto; /* Dynamic width for the link */
+    margin: 0 auto; /* Center the link block */
 }
 
 .credits-list.videos-list li a:hover {
@@ -157,25 +160,7 @@ footer {
 
 /* Heading Styling */
 .videos-section h2 {
-    margin-bottom: 20px; /* Space between the heading and the button */
+    margin-bottom: 20px; /* Space between the heading and the link */
     font-size: 1.8rem;
     text-align: center;
-}
-
-.flag-button-container {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Make the container take full height of the viewport */
-}
-
-.flag-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-.flag-button img {
-    width: 50px; /* Adjust the size of the flag */
-    height: auto;
 }
