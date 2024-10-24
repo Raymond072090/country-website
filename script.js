@@ -1,5 +1,9 @@
 // script.js
-function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    menu.classList.toggle("hidden");
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburgerIcon = document.querySelector(".hamburger-icon");
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+
+    hamburgerIcon.addEventListener("click", function () {
+        hamburgerMenu.classList.toggle("hidden");
+    });
+});
