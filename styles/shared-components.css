@@ -39,7 +39,7 @@
     right: 0;
     background-color: #dd0f0f;
     width: 200px;
-    z-index: 1000;
+    z-index: 1999; /* Ensure it's just below the icon */
     pointer-events: auto; /* Ensures it's clickable */
 }
 
@@ -48,9 +48,10 @@
     cursor: pointer;
     display: none; /* Hidden on desktop */
     position: relative; /* Ensure it's positioned properly */
-    z-index: 1001; /* Higher than other elements */
+    z-index: 2000; /* Ensure it is higher than the menu */
 }
 
+/* Hidden class for toggling visibility */
 .hidden {
     display: none;
 }
@@ -59,6 +60,7 @@
     display: block;
 }
 
+/* Mobile Specific Styles */
 @media (max-width: 768px) {
     .hamburger-icon {
         display: block; /* Show hamburger icon on mobile */
