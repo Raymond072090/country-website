@@ -19,10 +19,17 @@ h1 {
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem; /* Adjust title size for mobile */
-        margin-top: 15px;
-     } 
+    h1.pacifico-regular {
+        font-size: 2.5rem;
+    }
+
+    .nav-menu {
+        display: none; /* Hide the full menu on mobile */
+    }
+
+    .video-header {
+        height: 40vh; /* Adjust video height for smaller screens */
+    }
 }
 
 /* Video Header */

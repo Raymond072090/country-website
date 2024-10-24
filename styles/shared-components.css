@@ -32,25 +32,6 @@
     text-align: center;
 }
 
-/* Hamburger Menu */
-.hamburger-menu {
-    position: absolute;
-    top: 100px;
-    right: 0;
-    background-color: #dd0f0f;
-    width: 200px;
-    z-index: 1999; /* Ensure it's just below the icon */
-    pointer-events: auto; /* Ensures it's clickable */
-}
-
-.hamburger-icon {
-    font-size: 30px;
-    cursor: pointer;
-    display: none; /* Hidden on desktop */
-    position: relative; /* Ensure it's positioned properly */
-    z-index: 2000; /* Ensure it is higher than the menu */
-}
-
 /* Hidden class for toggling visibility */
 .hidden {
     display: none;
@@ -60,17 +41,49 @@
     display: block;
 }
 
-/* Mobile Specific Styles */
-@media (max-width: 768px) {
-    .hamburger-icon {
-        display: block; /* Show hamburger icon on mobile */
-    }
+/* Hamburger Icon */
+#hamburgerIcon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-    .main-nav {
-        display: none; /* Hide the regular nav on mobile */
-    }
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+}
 
-    .hamburger-menu {
-        display: none; /* Hidden by default */
-    }
+/* Hamburger Menu - initially hidden */
+.hamburger-menu.hidden {
+    display: none;
+}
+
+/* Hamburger Menu when shown */
+.hamburger-menu {
+    display: block;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    text-align: right;
+    padding: 10px;
+}
+
+.hamburger-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hamburger-menu ul li {
+    margin: 10px 0;
+}
+
+.hamburger-menu ul li a {
+    color: white;
+    text-decoration: none;
 }
