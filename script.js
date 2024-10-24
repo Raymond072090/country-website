@@ -1,6 +1,5 @@
 // script.js
-
 function toggleMenu() {
-    const nav = document.querySelector('.main-nav');
-    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
 }

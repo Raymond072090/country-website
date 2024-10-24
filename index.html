@@ -34,12 +34,20 @@
 <body>
     <header>
 
-        <!-- Hamburger Menu Icon -->
-        <div class="hamburger-menu" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+           <!-- Hamburger Icon -->
+           <div class="hamburger-icon" onclick="toggleMenu()">
+    &#9776; <!-- This is the 'three-bar' hamburger icon -->
+            </div>
+        
+         <!-- Hamburger Menu -->
+        <nav class="hamburger-menu hidden" id="mobileMenu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="credits.html">Credits</a></li>
+    </ul>
+</nav>
                 
         <!-- Logo in the top-left corner -->
         <a href="index.html" class="site-logo">
