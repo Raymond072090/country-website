@@ -1,3 +1,9 @@
-document.getElementById("hamburgerIcon").addEventListener("click", function() {
-    document.getElementById("mobileMenu").classList.toggle("show");
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerIcon = document.getElementById('hamburgerIcon');
+    if (hamburgerIcon) {
+        hamburgerIcon.addEventListener('click', function() {
+            const menu = document.querySelector('.hamburger-menu');
+            menu.classList.toggle('show');
+        });
+    }
 });
